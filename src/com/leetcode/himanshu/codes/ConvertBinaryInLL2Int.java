@@ -4,7 +4,7 @@ class ListNode {
       int val;
       ListNode next;
       ListNode(int x) { val = x; }
-  }
+}
 public class ConvertBinaryInLL2Int {
     public static int getDecimalValue(ListNode head) {
         String str = "";
