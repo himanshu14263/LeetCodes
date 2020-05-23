@@ -9,14 +9,13 @@ public class B {
         while(t-- > 0){
             long val = sc.nextLong();
             long ans = val;
-            int count=0;
-            while(val > 0){
+            while(val >= 10){
                 long add = val/10;
+                long remaining = val%10;
                 ans += add;
-                val = add;
-                count++;
+                val = add+remaining;
             }
-            System.out.println(ans+count-1);
+            System.out.println(ans);
         }
     }
 }
