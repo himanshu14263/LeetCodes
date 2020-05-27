@@ -7,29 +7,17 @@ public class A {
         Scanner sc = new Scanner(System.in);
         int t = sc.nextInt();
         while(t-- > 0){
-            long a = sc.nextLong();
-            long b = sc.nextLong();
-            long c = sc.nextLong();
-            long n = sc.nextLong();
+           int h = sc.nextInt();
+           int m = sc.nextInt();
 
-            long max = Math.max(Math.max(a,b),c);
-
-            long diff = 0;
-            diff += (Math.abs(a-max));
-            diff += (Math.abs(b-max));
-            diff += (Math.abs(c-max));
-
-            if(diff>n){
-                System.out.println("NO");
-            }
-            else{
-                if(Math.abs(diff-n)%3==0){
-                    System.out.println("YES");
-                }
-                else{
-                    System.out.println("NO");
-                }
-            }
+           int hans = (23-h);
+           int mans = (60-m);
+           if(hans==0){
+               System.out.println(mans);
+           }
+           else{
+               System.out.println(hans*60+mans);
+           }
         }
     }
 }
